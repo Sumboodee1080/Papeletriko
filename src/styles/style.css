@@ -1,0 +1,340 @@
+:root {
+        --color-primary: #DCC6B2;
+        --color-secondary: #000;
+        --font-title: sans-serif;
+        --font-default: 'Inika', serif;
+
+}
+
+*:not(.carousel *):not(.ry-accordion *):not(#accordion *):not([data-aos-duration]):not(.slick-track),
+::before,
+::after {
+        transition: 0.3s ease-in-out all;
+}
+
+* {
+        font-family: var(--font-default) !important;
+}
+
+body {
+        background: url("../styles/../../media/img/assets/bg.png");
+        padding: 0 0 48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+        font-weight: 600;
+        color: #333;
+}
+
+input,
+select,
+textarea {
+        background: var(--color-primary) !important;
+        border-radius: unset !important;
+        color: #000 !important;
+        border: none !important;
+        padding: 18px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important
+}
+
+
+
+.overlink {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+}
+
+.overlink a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: 0;
+}
+
+.container {
+        max-width: 1600px !important;
+        width: 90%;
+}
+
+input:focus,
+.btn:focus,
+select:focus {
+        box-shadow: unset !important;
+        opacity: 0.8
+}
+
+input::placeholder {
+        color: #000 !important;
+}
+
+.btn {
+        padding: 18px 48px;
+        height: unset !important;
+        width: unset !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 50px
+}
+
+.btn.btn-primary {
+        background: #333 !important;
+        border: none;
+        color: #fff !important;
+        font-weight: 600 !important
+}
+
+.btn.btn-primary:hover {
+        background: var(--color-secondary) !important;
+        color: #fff !important;
+}
+
+
+.login-card {
+        max-width: 1600px !important;
+        width: 90% !important;
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60vh;
+        border: none;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card>div {
+        width: 100%;
+}
+
+.login-card .login-image img {
+        height: 100%;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+}
+
+.login-card .card-body {
+        padding: 48px clamp(20px, 4.844vw, 48px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("../styles/../../media/img/assets/bg.png")
+}
+
+.login-card .card-body form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.login-card .card-body form>div {
+        width: 100%;
+}
+
+.login-card .card-body .logo {
+        max-width: clamp(180px, 32.291vw, 280px);
+        margin: 0 0 32px;
+}
+
+@media only screen and (max-width:1199px) {
+        .login-card .card-body form {
+                width: 100%;
+        }
+}
+
+@media only screen and (max-width:991px) {
+        .login-card .login-image {
+                max-height: 320px;
+        }
+
+        .login-card {
+                flex-direction: column;
+                height: unset;
+                border-radius: 10px;
+        }
+}
+
+/* Navigation Bar */
+
+.navbar .logo {
+        max-width: 180px;
+}
+
+.navbar li a {
+        color: #333 !important;
+        text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav {
+        align-items: center;
+        gap: 18px;
+}
+
+.navbar .logout-btn {
+        padding: 12px 28px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+}
+
+.navbar-dark .navbar-toggler,
+.navbar-dark .navbar-toggler:active,
+.navbar-dark .navbar-toggler:focus {
+        border: unset;
+        box-shadow: unset;
+
+}
+
+.navbar-dark .navbar-toggler span {
+        filter: brightness(0);
+        height: 35px;
+        width: 35px;
+}
+
+/* Module */
+.module-wrapper {
+        display: unset;
+}
+
+.module-row {
+        display: grid;
+        align-items: center;
+        gap: 16px;
+        flex: unset;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: unset;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+        justify-items: center;
+        justify-content: center;
+}
+
+.module-row>.col {
+        /* width: calc((100% / 4) - 16px); */
+        width: 100%;
+        height: 100%;
+        flex: unset;
+        background: #CFC0B8;
+}
+
+.module-row>.col .card {
+        height: 100% !important;
+        /* max-width: 480px; */
+}
+
+.module-row .module-cover {
+        height: 60%;
+        /* height: 250px; */
+}
+
+.module-row .module-cover img {
+        object-position: center;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+}
+
+.module-row .card-body {
+        background: #CFC0B8;
+        /* flex: unset; */
+        height: 40%;
+}
+
+.module-row .card-title {
+        color: #000;
+        font-weight: 800;
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin: 0;
+}
+
+.module-row .card-text {
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin: 0;
+}
+
+.accordion-item .accordion-header button {
+        background: #CFC0B8 !important;
+        font-size: 20px;
+        color: #333
+}
+
+.accordion-item .accordion-body {
+        background: url("../styles/../../media/img/assets/bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.accordion-item .accordion-body * {
+        font-size: 18px;
+}
+
+.user-management .userList a {
+        color: #333;
+        font-weight: 600;
+        font-size: 20px;
+}
+
+.userList .card-body {
+        cursor: pointer;
+        background: var(--color-primary);
+}
+
+.userList .card-body h6 {
+        margin: 0;
+        color: #333;
+
+}
+
+.userList .card-body+div>div {
+        background: #F5E4CF !important;
+}
+
+@media only screen and (max-width:991px) {
+
+        .module-row .card-body .card-title,
+        .module-row .card-body .card-text {
+                text-align: center;
+        }
+
+        .section-title {
+                justify-content: center !important;
+        }
+
+        .module-wrapper .module-row {
+                justify-content: center;
+
+        }
+}
