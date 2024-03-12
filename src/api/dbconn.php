@@ -1,13 +1,13 @@
 <?php
-require __DIR__ . "/vendor/autoload.php";
+require __DIR__ . '/../../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../../../');
 $dotenv->load();
 
-$host = getenv("DATABASE_HOSTNAME");
-$dbname = getenv("DATABASE_NAME");
-$username = getenv("DATABASE_USERNAME");
-$password = getenv("DATABASE_PASSWORD");
+$host = $_ENV["DATABASE_HOSTNAME"];
+$dbname = $_ENV["DATABASE_NAME"];
+$username = $_ENV["DATABASE_USERNAME"];
+$password = $_ENV["DATABASE_PASSWORD"];
 
 try {
     $dbConn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
