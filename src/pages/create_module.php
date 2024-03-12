@@ -5,11 +5,11 @@
             <form id="moduleDetailsForm" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Pamagat</label>
-                    <input type="text" class="form-control" id="title" name="title" maxlength="51" required>
+                    <input type="text" class="form-control" id="title" name="title" required>
                 </div>
                 <div class="mb-3">
                     <label for="shortDescription" class="form-label">Maikling Paglalarawan</label>
-                    <textarea class="form-control" id="shortDescription" name="shortDescription" rows="2" maxlength="75" required></textarea>
+                    <textarea class="form-control" id="shortDescription" name="shortDescription" rows="2" required></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="longDescription" class="form-label">Layunin</label>

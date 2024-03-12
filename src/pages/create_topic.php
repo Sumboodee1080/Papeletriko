@@ -23,7 +23,7 @@
                 <form id="topicDetailsForm" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="title" class="form-label">Pamagat</label>
-                        <input type="text" class="form-control" id="title" name="title" maxlength="150" required>
+                        <input type="text" class="form-control" id="title" name="title" required>
                     </div>
                     <div class="mb-1">
                         <label for="content" class="form-label">Nilalaman</label>
